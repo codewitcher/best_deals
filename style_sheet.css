@@ -23,10 +23,11 @@ header {
     align-items: center;
 }
 
-.header_content div {
+.header_content div a{
     display: inline-block;
-    margin-left: 1px;
+    margin-left: 2px;
     align-items: center;
+    text-align: center;
 }
 
 .button {
