@@ -31,7 +31,7 @@ a.n:hover{
 /*search bar */
 #frm{
     margin-top: 15%;
-    margin-left: 10%; 
+    margin-left: 9%; 
     margin-right: 12%;
 }
 
@@ -44,14 +44,14 @@ input.sbar{
     padding: 10px;
     width:60%;
     font-size: 16px;
-    border: 2px solid #eee;
+    border: 3px solid #eee;
     
 }
 input.b{
     background-color: gray; 
     border: 2px solid gray;
     color: white;
-    padding: 10px;
+    padding: 11px;
     text-align: center;
     text-decoration: none;
     display: inline;
@@ -66,9 +66,10 @@ input.b{
     
 }
 input.b:hover{
-    background-color: white;
-    color: black;
+    background-color: #00b8e6;
+    color: white;
     box-shadow: 0 0 5px gray;
+    border: 2px solid #00a3cc;  
 }
 
 
