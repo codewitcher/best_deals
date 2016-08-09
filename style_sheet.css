@@ -64,21 +64,23 @@ header {
 
 /*background */
 
-#background {
+.main_content {
     display: block;
     position: relative;
     height: calc(100vh - 60px);
+    background-image: url(bg_img.jpg);
 }
 
 
-/*search bar */
 
-#frm {
-    margin-top: 15%;
-    margin-left: 9%;
-    margin-right: 12%;
+/*search bar form*/
+.main_content form{
+    top: 200px;
+    left: auto;
+    right: auto;
+    position: relative;
 }
-
+/* --search bar-- */
 input.sbar {
     margin-right: 0;
     box-sizing: border-box;
@@ -87,7 +89,7 @@ input.sbar {
     font-size: 16px;
     border: 3px solid #eee;
 }
-
+/*-- button--*/
 input.b {
     background-color: gray;
     border: 2px solid gray;
