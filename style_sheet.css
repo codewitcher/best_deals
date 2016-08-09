@@ -103,7 +103,7 @@ input.b {
     cursor: pointer;
     border-bottom-right-radius: 5px;
     border-top-right-radius: 5px;
-    position: fixed;
+    position: relative;
 }
 
 input.b:hover {
@@ -111,4 +111,23 @@ input.b:hover {
     color: white;
     box-shadow: 0 0 5px gray;
     border: 2px solid #00a3cc;
+}
+
+/*----footer----*/
+footer{
+    width: 100%;
+    padding: 1px 0px;
+    background-color: #222;
+    
+}
+footer ul li a{
+    text-decoration: none;
+    color: azure;
+}
+footer ul{
+    list-style-type: none;
+}
+footer ul li{
+    display: inline-block;
+    margin-right: 13;
 }
