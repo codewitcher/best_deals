@@ -87,16 +87,15 @@ header {
 /* login menu */
 
 #credentials {
-    z-index: 15;
+    z-index: 5;
     position: relative;
     display: inline-block;
     background-color: #ffffe6;
     border-radius: 5px;
     width: 300px;
     height: 350px;
-    top: 58px;
-    top: -358;
     right: -310px;
+    top: -358px;
     position: absolute;
     box-shadow: 0 2px 2px 1px gray;
 }
@@ -219,8 +218,9 @@ footer ul li {
     float: right;
 }
 
-footer ul li:hover {
+footer ul li a:hover {
     bottom: 10px;
+    color: black;
     -webkit-transition-duration: 0.2;
     transition-duration: 0.3s;
 }
