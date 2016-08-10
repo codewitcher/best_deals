@@ -3,41 +3,47 @@ body {
 }
 
 #wrapper {
-    height: 100%;
+    height: auto ;
 }
+/*header*/
 
 header {
     width: 100%;
-    height: 10%;
-    background: #f1f1f1;
+    background: #222;
     z-index: 100;
     top: 0px;
-    position: absolute;
-    box-shadow: 0 4px 3px -3px gray;
+    position: fixed;
+    box-shadow: 0 4px 4px -3px gray;
+    border: -1;
 }
-
+#login{
+    float: right;
+    margin-right: 10px;
+}
 .header_content {
-    width: 35%;
-    height: 100%;
-    float: right;
-    padding: 15px;
+    margin: 0;
+}
+.header_content ul{
+    list-style-type: none;
+    
+}
+.header_content ul li{
+    display: inline;
+    padding-right: 25px;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+    position: relative
+}
+.header_content ul a {
+    text-decoration: none;
+    color: #888;
+}
+#home a:hover{
+    color: white;
 }
 
-.header_content div {
-    float: right;
-    display: inline-block;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.header_content div a {
-    display: inline-block;
-    margin-left: 2px;
-    align-items: center;
-    text-align: center;
-}
-
-.button {
+/*.button {
     background-color: #4285f4;
     border-radius: 2px;
     box-shadow: 4px 4px 3px -3px gray;
@@ -45,47 +51,7 @@ header {
     padding-right: 1em;
     padding-top: 0.8em;
     padding-bottom: 0.8em;
-}
-
-.button a {
-    text-decoration: none;
-    color: white;
-    font-size: 19;
-}
-
-.button:hover {
-    background-color: #00b8e6;
-    box-shadow: 0 0 0 0;
-}
-
-#logo {
-    width: 30%;
-    margin-left: 1%;
-    height: 100%;
-    display: inline-block;
-}
-
-#icon {
-    display: inline-block;
-    vertical-align: middle;
-    height: auto;
-    width: 54px;
-    border: 1px solid white;
-    border-radius: 50px;
-    color: white;
-    text-align: center;
-    line-height: 52px;
-    font-size: 25;
-    background-color: orange;
-}
-
-#logo p {
-    display: inline-block;
-    font-family: cursive;
-    font-size: 20;
-    color: #4285f4;
-}
-
+}*/
 
 /*background */
 
@@ -100,24 +66,26 @@ header {
     background-image: url(bg_img.jpg);
 }
 
-#main_content {
+.main_content {
     height: 100%;
+    width: auto;    
 }
 
-#frm {
+
+/*#frm {
     position: relative;
     top: 200px;
     margin-left: auto;
     margin-right: auto;
     width: 70%;
     max-width: 500px;
-}
+}*/
 
 
 /*search bar form*/
 
 .main_content form {
-    top: 200px;
+    top: 245px;
     left: auto;
     right: auto;
     position: relative;
@@ -128,44 +96,48 @@ header {
 
 input.sbar {
     margin-right: 0;
-    box-sizing: border-box;
-    padding: 15px;
-    width: 80%;
+    box-sizing: content-box;
+    padding: 10 0 10 8 ;
+    width: 38%;
     font-size: 16px;
-    border: 3px solid #eee;
+    border: -1px solid #eee;
+    outline: none;
+    font-size: 20px;
+    position: relative;
 }
 
 
 /*-- button--*/
 
 input.b {
-    background-color: #4285f4;
+    background-color: #0c8484;
     background-image: url(images/search_icon_1.png);
     background-repeat: no-repeat;
-    vertical-align: middle;
-    border-radius: 3px;
+    border-radius: 0;
+    height:47px;
     width: 50px;
     background-size: 100%;
     box-shadow: 4px 4px 3px -3px gray;
-    border: 2px solid #4285f4;
+    border: 8px solid #0c8484   ;
+    margin: -1;
     color: white;
-    padding: 15px;
+    padding: 14px;
     text-align: center;
     text-decoration: none;
-    display: inline;
+    display: inline-block;
     font-size: 16px;
     margin: 0;
     -webkit-transition-duration: 0.2;
     transition-duration: 0.3s;
     cursor: pointer;
-    position: relative;
+    position: absolute;
 }
 
 input.b:hover {
     background-color: #00b8e6;
     color: white;
     box-shadow: 0 0 5px gray;
-    border: 2px solid #00a3cc;
+    border: 6px solid #00b8e6;
 }
 
 
@@ -174,19 +146,23 @@ input.b:hover {
 footer {
     width: 100%;
     padding: 1px 0px;
-    background-color: #222;
-    position: relative;
+    position: absolute;
+    background-color: white;
     bottom: 0px;
-    z-index: -1;
+    z-index: 150;
 }
 
 footer ul li a {
     text-decoration: none;
-    color: azure;
+    color: #555;
+    font-weight: bold;
+    font-size: 17px;
+    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
 }
 
 footer ul {
     list-style-type: none;
+     position: relative;
 }
 
 footer ul li {
@@ -194,6 +170,8 @@ footer ul li {
     margin-right: 17px;
     padding: 5px;
     font-weight: 200;
+    float: right;
+   
 }
 
 footer ul li:hover {
