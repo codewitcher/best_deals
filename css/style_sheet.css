@@ -3,45 +3,56 @@ body {
 }
 
 #wrapper {
-    height: auto ;
+    position: relative;
+    width: 100%;
+    overflow: hidden;
 }
+
+
 /*header*/
 
 header {
     width: 100%;
     background: #222;
-    z-index: 100;
+    z-index: 10;
     top: 0px;
     position: fixed;
     box-shadow: 0 4px 4px -3px gray;
     border: -1;
 }
-#login{
+
+#login {
     float: right;
     margin-right: 10px;
+    cursor: pointer;
 }
+
 .header_content {
     margin: 0;
 }
-.header_content ul{
+
+.header_content ul {
     list-style-type: none;
-    
 }
-.header_content ul li{
+
+.header_content ul li {
     display: inline;
     padding-right: 25px;
     font-weight: bold;
     font-size: 17px;
-    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+    font-family: "Segoe UI", Segoe, Tahoma, Arial, Verdana, sans-serif;
     position: relative
 }
+
 .header_content ul a {
     text-decoration: none;
     color: #888;
 }
-#home a:hover{
+
+#home a:hover {
     color: white;
 }
+
 
 /*.button {
     background-color: #4285f4;
@@ -52,6 +63,7 @@ header {
     padding-top: 0.8em;
     padding-bottom: 0.8em;
 }*/
+
 
 /*background */
 
@@ -68,7 +80,40 @@ header {
 
 .main_content {
     height: 100%;
-    width: auto;    
+    width: auto;
+}
+
+
+/* login menu */
+
+#credentials {
+    z-index: 15;
+    position: relative;
+    display: inline-block;
+    background-color: #ffffe6;
+    border-radius: 5px;
+    width: 300px;
+    height: 350px;
+    top: 58px;
+    right: -310px;
+    position: absolute;
+    box-shadow: 0 2px 2px 1px gray;
+}
+
+#credentials> div {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+
+#credentials .button {}
+
+#login_menu {
+    visibility: visible;
+}
+
+#signup_menu {
+    visibility: hidden;
 }
 
 
@@ -97,7 +142,7 @@ header {
 input.sbar {
     margin-right: 0;
     box-sizing: content-box;
-    padding: 10 0 10 8 ;
+    padding: 10 0 10 8;
     width: 38%;
     font-size: 16px;
     border: -1px solid #eee;
@@ -111,14 +156,14 @@ input.sbar {
 
 input.b {
     background-color: #0c8484;
-    background-image: url(images/search_icon_1.png);
+    background-image: url(../images/search_icon_1.png);
     background-repeat: no-repeat;
     border-radius: 0;
-    height:47px;
+    height: 47px;
     width: 50px;
     background-size: 100%;
     box-shadow: 4px 4px 3px -3px gray;
-    border: 8px solid #0c8484   ;
+    border: 8px solid #0c8484;
     margin: -1;
     color: white;
     padding: 14px;
@@ -157,12 +202,12 @@ footer ul li a {
     color: #555;
     font-weight: bold;
     font-size: 17px;
-    font-family: "Segoe UI",Segoe,Tahoma,Arial,Verdana,sans-serif;
+    font-family: "Segoe UI", Segoe, Tahoma, Arial, Verdana, sans-serif;
 }
 
 footer ul {
     list-style-type: none;
-     position: relative;
+    position: relative;
 }
 
 footer ul li {
@@ -171,7 +216,6 @@ footer ul li {
     padding: 5px;
     font-weight: 200;
     float: right;
-   
 }
 
 footer ul li:hover {
