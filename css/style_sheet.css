@@ -90,7 +90,7 @@ header {
     z-index: 15;
     position: relative;
     display: inline-block;
-    background-color: #ffffe6;
+    background-color: #222;
     border-radius: 5px;
     width: 300px;
     height: 350px;
@@ -99,18 +99,78 @@ header {
     right: -310px;
     position: absolute;
     box-shadow: 0 2px 2px 1px gray;
+    opacity: 0.5;
 }
 
-#credentials> div {
+#credentials > div {
     position: absolute;
     height: 100%;
     width: 100%;
 }
 
-#credentials .button {}
+#credentials .button {
+    
+}
 
-#login_menu {
+/*login */
+
+.login_menu {
     visibility: visible;
+    top:auto;
+}
+.login_menu form{
+    top: 20%;
+    overflow: hidden;
+    position: relative;
+}
+#login_search{
+    width: 76%;
+    overflow: hidden;
+    display: block;
+    margin-left:14%;
+    margin-bottom: 7%;
+    margin-top: 8%;
+    box-sizing: border-box;
+    padding: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    
+}
+#login_pass{
+    margin-left:14%;
+    overflow: hidden;
+    width: 76%  ;
+    display: block;
+    padding: 7px;
+    font-size:15px;
+    font-weight: bold;
+    
+    
+}
+#login_submit{
+    margin-left:29%;
+    margin-top: 7%;
+    width: 45%;
+    height: 11%;
+    font-weight: bold;
+    font-family: "Segoe UI", Segoe, Tahoma, Arial, Verdana, sans-serif;
+        
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+/*end of login*/
+#login_search{
+    
 }
 
 #signup_menu {
