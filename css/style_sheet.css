@@ -139,7 +139,7 @@ header {
 
 /* --search bar-- */
 
-input.sbar {
+#sbar {
     margin-right: 0;
     box-sizing: content-box;
     padding: 10 0 10 8;
@@ -154,7 +154,7 @@ input.sbar {
 
 /*-- button--*/
 
-input.b {
+#b {
     background-color: #0c8484;
     background-image: url(../images/search_icon_1.png);
     background-repeat: no-repeat;
@@ -178,7 +178,7 @@ input.b {
     position: absolute;
 }
 
-input.b:hover {
+#b:hover {
     background-color: #00b8e6;
     color: white;
     box-shadow: 0 0 5px gray;

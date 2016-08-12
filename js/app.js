@@ -2,7 +2,13 @@
 /*global $, jQuery, alert*/
 
 var credential_open = false;
+
+function noText(id) {
+    return document.forms[id].textbox_text.value == "";
+}
+
 $(document).ready(function () {
+    //login button
     $("#login").click(function () {
         if (!credential_open) {
             $("#credentials").animate({
@@ -17,6 +23,20 @@ $(document).ready(function () {
             });
             credential_open = false;
         }
+    });
+
+    //search
+    $("#sbar").keyup(function (event) {
+        if (event.keyCode == 13) {
+            $("#b").click();
+        }
+    });
+
+    $("#b").click(function () {
+        $(".main_content form").animate({
+            "top": "145px"
+        });
+
     });
 
 });
