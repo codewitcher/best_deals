@@ -1,0 +1,25 @@
+{
+  "name": "best_deals",
+  "version": "1.0.0",
+  "description": "best_deals",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codewitcher/best_deals.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/codewitcher/best_deals/issues"
+  },
+  "homepage": "https://github.com/codewitcher/best_deals"
+}

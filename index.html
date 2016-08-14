@@ -1,10 +1,9 @@
 <html lang="us-EN">
-<link rel="stylesheet" href="style_sheet.css">
 
 <head>
     <meta charset="utf-8">
     <title>Test-Webpage</title>
-    <link rel="stylesheet" href="css/style_sheet.css">
+    <link rel="stylesheet" href="resources/css/style.css">
 </head>
 
 <body>
@@ -24,11 +23,11 @@
         <div id="credentials">
 
             <div class="login_menu">
-                    <form>
+                <form>
                     <input id="login_search" type="search" placeholder="Username">
-                        <input id="login_pass" type="password" placeholder="Password">
-                        <input id="login_submit" align="center" type="submit" name="submit" value="SIGN IN">
-                        </form>
+                    <input id="login_pass" type="password" placeholder="Password">
+                    <input id="login_submit" align="center" type="submit" name="submit" value="SIGN IN">
+                </form>
             </div>
             <div id="signup_menu">
                 <p>REGISTER</p>
@@ -47,9 +46,9 @@
         </div>
 
         <div class="main_content">
-            <form align="center">
+            <form id="search_bar" align="center">
                 <input id="sbar" type="text" name="search" placeholder="">
-                <input id="b" type="button" value="">
+                <input id="b" type="submit" value="">
             </form>
         </div>
     </div>
@@ -63,8 +62,8 @@
             </ul>
         </div>
     </footer>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script src="vendors/jquery/jquery-3.1.0.min.js"></script>
+    <script type="text/javascript" src="resources/js/script.js"></script>
 </body>
 
 </html>
